@@ -15,6 +15,12 @@ class _PriceScreenState extends State<PriceScreen> {
   Map<String, String> cryptoToPrice = {};
   bool isPriceReady = false;
 
+  @override
+  initState() {
+    super.initState();
+    getExchangeRate();
+  }
+
   List<PriceCard> getCryptoList() {
     List<PriceCard> priceCardList = [];
     for (String currency in cryptoList) {

@@ -2,7 +2,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'coin_data.dart';
 
-const apiKey = '99455ED4-E2E7-4BED-AFB1-05F7FCD0AD53';
+//TODO: input your apiKey
+const apiKey = 'YOUR API KEY';
 
 class Price {
   Future getPrices(String SelectedFiatCurrency) async {
